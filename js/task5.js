@@ -1,7 +1,8 @@
 const el = document.querySelector('.task5__content');
+const infi = Infinity;
 const options = {
   root: null,
-  rootMargin: '-30% 0px',
+  rootMargin: `999999px 0px -30%`,
   threshold: 0,
 };
 
