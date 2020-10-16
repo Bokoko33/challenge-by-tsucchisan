@@ -4,15 +4,15 @@ const overlay = document.getElementById('task4-overlay');
 const modal = document.getElementById('task4-modal');
 
 export default function task4() {
-  openButton.onclick = function () {
+  openButton.addEventListener('click', function () {
     openModal();
-  };
-  closeButton.onclick = function () {
+  });
+  closeButton.addEventListener('click', function () {
     closeModal();
-  };
-  overlay.onclick = function () {
+  });
+  overlay.addEventListener('click', function () {
     closeModal();
-  };
+  });
 }
 
 function openModal() {
