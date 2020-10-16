@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>つっちーさんからの挑戦状</title>
+    <meta name="description" content="研修課題" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">つっちーさんからの挑戦状</h1>
+    </header>
+    <div class="tasks">
+      <section class="task">
+        <h2 class="task__title">課題1　pictureタグでの画像表示わけ</h2>
+        <p class="task__description">
+          スクリーン幅768pxを境に画像が切り替わります。
+        </p>
+        <div class="task__content">
+          <picture>
+            <source
+              srcset="assets/image_task1_1.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="task1__image"
+              src="./assets/image_task1_2.jpg"
+              alt="猫の画像"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="task">
+        <h2 class="task__title">課題2　imgタグの縦横比固定表示</h2>
+        <p class="task__description">
+          アスペクト比の異なる画像を全て16:9で表示します。
+        </p>
+        <div class="task__content">
+          <ul class="task2__list">
+            <li class="task2__item">
+              <img
+                class="task2__item__image"
+                src="./assets/image_task2_1.jpg"
+                alt="羊の画像"
+              />
+            </li>
+            <li class="task2__item">
+              <img
+                class="task2__item__image"
+                src="./assets/image_task2_2.jpg"
+                alt="山羊の画像"
+              />
+            </li>
+            <li class="task2__item">
+              <img
+                class="task2__item__image"
+                src="./assets/image_task2_3.jpg"
+                alt="鹿の画像"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="task">
+        <h2 class="task__title">
+          課題3　【JS】MediaQueryListによるメディアクエリの取得
+        </h2>
+        <p class="task__description">
+          スクリーン幅768pxを境にテキストが切り替わります。
+        </p>
+        <div class="task__content">
+          <p class="task3__text" id="js-target-task3"></p>
+        </div>
+      </section>
+      <section class="task">
+        <h2 class="task__title">
+          課題4　モーダルウィンドウの実装（可能な限りCSSのみ)
+        </h2>
+        <p class="task__description">
+          ボタンをクリックするとモーダルウィンドウが表示されます。
+        </p>
+        <div class="task__content">
+          <button class="task4__button" id="task4-open">モーダルを開く</button>
+          <div class="task4__overlay" id="task4-overlay"></div>
+          <div class="task4__modal" id="task4-modal">
+            <p class="task4__modal__text">モーダルです。（ドーン）</p>
+            <button class="task4__modal__button" id="task4-close"></button>
+          </div>
+        </div>
+      </section>
+      <section class="task">
+        <h2 class="task__title">課題5　InterSectionObserver</h2>
+        <p class="task__description">
+          透明な要素が、ウインドウ下端から30%上の位置に到達したときに、姿を現します。
+        </p>
+        <div class="task__content">
+          <div class="task5__content">
+            <img
+              class="task5__image"
+              src="./assets/image_task5_1.jpg"
+              width="1280"
+              height="960"
+              alt="カメレオン"
+            />
+            <p class="task5__text">じゃーん。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
