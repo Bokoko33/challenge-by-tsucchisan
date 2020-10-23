@@ -84,7 +84,6 @@
   height: 100vh;
   background-color: rgba(#000000, 0.3);
   z-index: 100;
-  transition: opacity 0.1s;
 }
 
 .task4__modal {
@@ -100,18 +99,20 @@
   background-color: white;
   border-radius: 6px;
   z-index: 1000;
-  transition: all 0.3s;
 }
 
 .task4__overlay,
 .task4__modal {
+  visibility: hidden;
+  transition: all 0.3s;
   opacity: 0;
-  pointer-events: none;
+  // pointer-events: none;
 }
 
 .task4--visible {
+  visibility: visible;
   opacity: 1;
-  pointer-events: auto;
+  // pointer-events: auto;
 }
 
 .task4__modal__button {
